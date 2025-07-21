@@ -1,0 +1,41 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch & Profile built-in server",
+			"type": "php",
+			"request": "launch",
+			"noDebug": true,
+			"profile": true,
+			"runtimeArgs": [
+				"-S",
+				"localhost:8000",
+				"-t",
+				"."
+			],
+			"port": 9003,
+			"serverReadyAction": {
+				"action": "openExternally"
+			}
+		},
+		{
+			"name": "C/C++ Runner: Debug Session",
+			"type": "cppdbg",
+			"request": "launch",
+			"args": [],
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"cwd": "d:/MyNasm/demo",
+			"program": "d:/MyNasm/demo/build/Debug/outDebug",
+			"MIMode": "gdb",
+			"miDebuggerPath": "gdb",
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			]
+		}
+	]
+}
