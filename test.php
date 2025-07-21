@@ -10,6 +10,17 @@ class A
 
 }
 
+class B
+{
+	public $name;
+	public function f()
+	{
+
+		echo "类特性\n";
+	}
+
+}
+
 $a = new A;
 $arr = [$a, 'f'];
 $arr();
